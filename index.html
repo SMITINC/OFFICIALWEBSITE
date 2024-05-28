@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Southern Mindanao Institute of Technology Inc. (SMIT)</title>
     <style>
-           body {
+        body {
             font-family: 'Century Gothic', Times, serif, sans-serif;
             margin: 0;
             padding: 20px;
@@ -76,7 +76,8 @@
             position: fixed;
             width: 100%;
             bottom: 0;
-            font-size: 0.875rem; /* Slightly smaller font size for the footer */ }
+            font-size: 0.875rem; /* Slightly smaller font size for the footer */
+        }
     </style>
 </head>
 <body>
@@ -85,7 +86,6 @@
         <h1>Southern Mindanao Institute of Technology</h1>
         <p>National Highway Brgy. Buenaflor Tacurong City</p>
         <p>Your future begins here</p>
-        
     </header>
     <nav>
         <a href="#home">Home</a>
@@ -97,91 +97,51 @@
     <div id="home" class="content">
         <h2>Welcome to SMIT</h2>
         <p>Your journey towards academic excellence starts here. Explore our programs and campus life.</p>
-        <img src="images/TT.jpg">
+        <img src="images/TT.jpg" alt="Home Image">
     </div>
 
-    <section id="about">
+    <section id="about" class="container">
         <h2>About Us</h2>
         <p>Southern Mindanao Institute of Technology Inc. (SMIT) is committed to providing quality education that empowers students to achieve their full potential. Our institution prides itself on a diverse and inclusive learning environment, dedicated faculty, and a wide range of programs designed to meet the needs of the modern workforce.</p>
         <p>The Southern Mindanao Institute of Technology Inc. (SMIT) is a leading educational institution dedicated to fostering academic excellence, character development, and nation-building. Established in 1985, SMIT has been at the forefront of providing quality education and producing competent professionals.</p>
         <p>Our campus is equipped with state-of-the-art facilities, experienced faculty members, and a supportive learning environment, ensuring that students receive the best possible education to succeed in their chosen careers.</p>
         <p><strong>Faculty & Staff</strong></p>
-        <img src="images/435232570_749676813965248_8756290236153566290_n.jpg" alt="about 1">
-        <img src="images/441466269_393202653712247_4553187120013163777_n.jpg" alt="about 2">
-        <img src="images/442489569_913114597524954_2173556255492793875_n.jpg" alt="about 3">
-        <img src="images/441403214_828644439287419_7926529864003871832_n.jpg" alt="about 4">
+        <img src="images/435232570_749676813965248_8756290236153566290_n.jpg" alt="Faculty Image 1">
+        <img src="images/441466269_393202653712247_4553187120013163777_n.jpg" alt="Faculty Image 2">
+        <img src="images/442489569_913114597524954_2173556255492793875_n.jpg" alt="Faculty Image 3">
+        <img src="images/441403214_828644439287419_7926529864003871832_n.jpg" alt="Faculty Image 4">
         
-
-     <p><strong>VISION</strong></p>
-     <p>Southern Mindanao Institute ofchnology Inc.  Te(SMIT), is a learning-centered institution committed to quality education.</p>
-    <P><strong>MISSION</strong></P>
-    <p>Southern Mindanao Institute of Technology Inc. (SMIT), commits to provide the community with competent, ethical research-oriented graduates through:</p>
-    <ul>
-        <li>A. Efficient and effective faculty and staff.</li>
-        <li>B. Adequate and appropriate instructional facilities.</li>
-        <li>C. Innovative and responsive teaching strategies.</li>
-    </ul>
-    <P><strong>CORE VALUES</strong></P>
-    <p>Southern Mindanao Institute ofchnology Inc. is a time conscious institution that embraces:</p>
-    <P><strong>SERVICE,               MODESTY,              INTEGRITY,              TRUST</strong></
+        <p><strong>VISION</strong></p>
+        <p>Southern Mindanao Institute of Technology Inc. (SMIT) is a learning-centered institution committed to quality education.</p>
+        <p><strong>MISSION</strong></p>
+        <p>Southern Mindanao Institute of Technology Inc. (SMIT) commits to provide the community with competent, ethical, research-oriented graduates through:</p>
+        <ul>
+            <li>A. Efficient and effective faculty and staff.</li>
+            <li>B. Adequate and appropriate instructional facilities.</li>
+            <li>C. Innovative and responsive teaching strategies.</li>
+        </ul>
+        <p><strong>CORE VALUES</strong></p>
+        <p>Southern Mindanao Institute of Technology Inc. embraces the values of SERVICE, MODESTY, INTEGRITY, and TRUST.</p>
     </section>
 
-    <section id="programs">
+    <section id="programs" class="container">
         <h2>Our Programs</h2>
         <p>SMIT offers a variety of programs to cater to the diverse interests and career goals of our students. Our programs include:</p>
-       <ul style="list-style-type:none;">
-            <img src="images/Untitled-1.jpg" alt="programs">
-
-     
+        <ul style="list-style-type:none;">
+            <li><img src="images/Untitled-1.jpg" alt="Programs Image"></li>
+        </ul>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="container">
         <h2>Contact Us</h2>
         <p>If you have any questions or need more information, please feel free to reach out to us:</p>
-        <p>Email:smit@thebest.com</p>
-        <p>Phone:(064) 200-3549</p>
+        <p>Email: smit@thebest.com</p>
+        <p>Phone: (064) 200-3549</p>
         <p>Address: National Highway, Brgy. Buenaflor, City of Tacurong</p>
     </section>
 
-    <footer>
-        <div class="marquee">
-            <p>&copy; 2024 Southern Mindanao Institute of Technology Inc. All rights reserved.</p>
-        </div>
+    <footer class="footer">
+        <p>&copy; 2024 Southern Mindanao Institute of Technology Inc. All rights reserved.</p>
     </footer>
-
-    <script>
-        let currentImageIndex = 0;
-        const images = document.querySelectorAll('.gallery img');
-        
-        function showImage(index) {
-            images.forEach((image, i) => {
-                if (i === index) {
-                    image.style.display = 'block';
-                } else {
-                    image.style.display = 'none';
-                }
-            });
-        }
-        
-        function nextImage() {
-            currentImageIndex++;
-            if (currentImageIndex >= images.length) {
-                currentImageIndex = 0;
-            }
-            showImage(currentImageIndex);
-        }
-        
-        function prevImage() {
-            currentImageIndex--;
-            if (currentImageIndex < 0) {
-                currentImageIndex = images.length - 1;
-            }
-            showImage(currentImageIndex);
-        }
-        
-        // Show the first image initially
-        showImage(0);
-    </script>
-
 </body>
 </html>
